@@ -16,31 +16,33 @@ This project deploys a simple note-taking web application on an AWS EC2 instance
 - Security groups allowing ports 22 (SSH) and 80 (HTTP)
 - Key pair for SSH access
 
-![alt text](image.png)
-![alt text](image-1.png)
+![EC2 Instance](Assets/ec2-instance.png)
+![Security Groups](Assets/security-groups.png)
 
 ### 2. Web Application
 A simple Flask application that allows users to:
 - Write and submit notes
 - View previously submitted notes with timestamps
 
-![alt text](<Screenshot from 2025-07-18 10-32-34.png>)
+![Web Application](Assets/web-app.png)
 
 ### 3. MariaDB Configuration
 - Database: notesdb
 - Table: notes (id, content, created_at)
 - User: notesuser with appropriate permissions
 
-![alt text](<Screenshot from 2025-07-18 10-52-34.png>)
+![Database](Assets/database.png)
 
 ### 4. Backup Solution
 - Additional EBS volume mounted at /backup
 - Daily backup script using mysqldump
 - Persistent mount using UUID in /etc/fstab
 
-![alt text](<Screenshot from 2025-07-18 10-53-09.png>)
-![alt text](<Screenshot from 2025-07-18 10-54-12.png>)
-![alt text](<Screenshot from 2025-07-18 10-56-25.png>)
+![EBS Volume](Assets/ebs-volume.png)
+
+![Backup Mount](Assets/backup-mount.png)
+
+![Backup Files](Assets/backup-files.png)
 
 ## Installation and Setup
 

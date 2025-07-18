@@ -1,2 +1,7 @@
+# Ignore all PNGs
 *.png
 Screenshot*
+
+# Except those in the Assets directory
+!Assets/
+!Assets/*.png
